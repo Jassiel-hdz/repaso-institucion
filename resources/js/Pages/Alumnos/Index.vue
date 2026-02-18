@@ -1,13 +1,32 @@
 <script setup>
-
+// No necesitas importar nada extra aquí por ahora
 </script>
 
 <template>
-    <div style="padding: 20px; font-family: sans-serif;">
-        <h1 style="color: #333;">Página de Alumnos</h1>
-        <p>Universidad Catolica de Honduras
+    <v-app>
+        <v-main>
+            <v-container>
+                <v-card class="mx-auto mt-5" max-width="500" elevation="10">
+                    <v-card-item>
+                        <v-card-title class="text-h5">
+                            Página de Alumnos
+                        </v-card-title>
+                        <v-card-subtitle>
+                            Universidad Católica de Honduras
+                        </v-card-subtitle>
+                    </v-card-item>
 
-            La pagina funciona Correctamente
-        </p>
-    </div>
+                    <v-card-text>
+                        <p class="text-body-1">La página funciona Correctamente con Vuetify.</p>
+                    </v-card-text>
+
+                    <v-card-actions>
+                        <v-btn color="primary" variant="elevated" prepend-icon="mdi-check-circle">
+                            ¡Todo listo!
+                        </v-btn>
+                    </v-card-actions>
+                </v-card>
+            </v-container>
+        </v-main>
+    </v-app>
 </template>
