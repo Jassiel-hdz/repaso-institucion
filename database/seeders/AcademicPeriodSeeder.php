@@ -5,7 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class AlumnosSeeder extends Seeder
+class AcademicPeriodSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -13,6 +13,5 @@ class AlumnosSeeder extends Seeder
     public function run(): void
     {
         //
-        Alumnos::factory()->count(10)->create();
     }
 }

@@ -18,6 +18,13 @@ class AlumnosFactory extends Factory
     {
         return [
             //
-        ];
+            'nombre'=>$this->faker->name(),
+            'correo'=>$this->faker->unique()->safeEmail(),
+            'telefono'=>$this->faker->phoneNumber(),
+            'Edad'=>$this->faker->numberBetween(18, 100), 
+
+        ]; 
+   
     }
 }
+ 

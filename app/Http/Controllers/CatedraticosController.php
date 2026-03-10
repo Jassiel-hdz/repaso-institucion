@@ -4,14 +4,14 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class CarreraController extends Controller
+class CatedraticosController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        //
+    return Inertia::Render('Catedraticos/Index');
     }
 
     /**

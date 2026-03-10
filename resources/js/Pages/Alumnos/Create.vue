@@ -1,7 +1,7 @@
 <script setup>
 import { useForm } from '@inertiajs/vue3'
 
-// Definimos las props que vienen del controlador (las carreras)
+
 const props = defineProps({
     carreras: Array
 })
