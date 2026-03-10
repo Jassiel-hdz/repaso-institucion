@@ -14,17 +14,16 @@ const headers = [
     { title: 'Correo', key: 'correo' },
     { title: 'Teléfono', key: 'telefono' },
     { title: 'Carrera', key: 'carrera.nombre' }, 
-    { title: 'Acciones', key: 'actions', sortable: false },
 ];
 </script>
 
 <template>
-    <Head title="Alumnos" />
+    <Head title="Catedraticos" />
 
     <AuthenticatedLayout>
         <template #header>
             <h2 class="text-xl font-semibold leading-tight text-gray-800">
-                Listado de Alumnos
+                Listado de Catedraticos
             </h2>
         </template>
 
@@ -32,7 +31,7 @@ const headers = [
             <v-card elevation="2">
                 <v-card-title class="d-flex align-center py-4">
                     <v-icon icon="mdi-account-group" class="me-2"></v-icon>
-                    Gestión de Alumnos
+                    Gestión de Catedraticos
                     <v-spacer></v-spacer>
                     
                     <

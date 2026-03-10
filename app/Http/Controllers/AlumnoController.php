@@ -9,25 +9,25 @@ use Inertia\Inertia;
 
 class AlumnoController extends Controller
 {
-    // Mostrar la lista de alumnos (Punto 5)
+   
     public function index()
     {
-        $alumnos = Alumnos::with('carrera')->get(); // Traemos alumnos con su carrera
+        $alumnos = Alumnos::with('carrera')->get(); 
         return Inertia::render('Alumnos/Index', [
             'alumnos' => $alumnos
         ]);
     }
 
-    // Mostrar el formulario de creación
+   
     public function create()
     {
-        $carreras = Carreras::all(); // Necesitamos las carreras para el select
+        $carreras = Carreras::all(); 
         return Inertia::render('Alumnos/Create', [
             'carreras' => $carreras
         ]);
     }
 
-    // Guardar el alumno (Punto 8: Lógica de negocio)
+    
     public function store(Request $request)
     {
         $request->validate([
